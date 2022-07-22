@@ -24,9 +24,9 @@ def writepf5(directory, parameters, entry, firmware_major, firmware_minor, vfd_n
     xml_drive = ET.SubElement(xml_node, 'Drive')
     xml_drive.set('Brand', "1")
     xml_drive.set('Family', "9")
-    xml_drive.set('Config', "212")
-    xml_drive.set('Major Rev', firmware_major)
-    xml_drive.set('Minor Rev', firmware_minor)
+    xml_drive.set('Config', "199")
+    xml_drive.set('MajorRev', firmware_major)
+    xml_drive.set('MinorRev', firmware_minor)
     xml_parameters = ET.SubElement(xml_drive, "Parameters")
 
     isdir = os.path.isdir(directory)
